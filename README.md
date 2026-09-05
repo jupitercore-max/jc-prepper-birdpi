@@ -42,6 +42,8 @@
 - `firmware/` — Arduino (ESP32 core) sketch for the XIAO: PDM capture → WebSocket stream → deep-sleep duty cycling. Chosen over ESPHome because ESPHome has no first-class raw-audio-streaming component; micro-Python/Arduino gives direct control of the PDM driver and WS frames. (See BUILD.md.)
 - `ios/` — Minimal SwiftUI app that receives the WebSocket audio and runs classification via Apple's native Sound Analysis (`SNAudioStreamAnalyzer`) with a pluggable hook for a BirdNET CoreML model if/when one is converted.
 - `BUILD.md` — Full flashing, pairing, and wiring (hint: there's basically no wiring).
+- `POWER.md` — duty-cycle design + realistic battery runtime estimates.
+- `ENCLOSURE.md` — hot glue / conformal potting weatherproofing (no 3D print).
 - `pi-alternative/` — the original $60 Pi Zero + BirdNET-Pi design, kept as the standalone-on-prem option.
 
 ## Honest Limitations
